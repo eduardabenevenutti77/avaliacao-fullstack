@@ -38,6 +38,10 @@ footer {
     font-size: 25px;
     font-weight: 300;
 }
+.display-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .bree-serif-regular {
   font-family: "Bree Serif", serif;
   font-weight: 400;
