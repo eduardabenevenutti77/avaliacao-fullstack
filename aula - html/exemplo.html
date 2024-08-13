@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maria">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/aula - html/exemplo.css">
+    <title>Exemplo HTML</title>
+</head>
+<body>
+    <!--
+     - criar uma página com cabeçalho, corpo e rodapé (ok)
+     - utilzar listas ordenadas e não ordenadas para organizar informações
+     - criar um formulário simples (ok)
+     - incorpore imagem e vídeo usando tags
+     - crie uma tabela com grade de horários 
+     - lista ordenada com links para sites favoritos com cada link (ok)
+     - aplicar estilização
+    -->
+    <header>
+        <p class="title">Minha página html - Básico</p>
+        <!-- <a href="">Voltar</a> -->
+    </header>
+    <section class="display-section">
+        <img src="/aula - html/imgs/img.jpg" alt="">
+        <p class="text">Prazer, sou a Maria Edª Benevenutti! Aluna do <strong>4º Semestre de Análise e Desenvolvimento de Sistemas</strong> pela Faculdade Senac Joinville. Este é a minha mini atividade de desenvolvimento frontend, utilizando: <strong>HTML & CSS</strong>, para a matéria de FullStack - Ministrada pelo professor Renan Ponick.</p>
+        <!-- <p class="sub-title">Seção de Listas</p> -->
+    </section>
+    <section>
+        <!-- <p class="sub-title">Form Simples</p> -->
+        <fieldset>
+            <legend>Formulário</legend>
+            <form action="">
+                <div>
+                    <label for="">Nome: </label>
+                    <input type="text" name="" id="name">
+                </div>
+                <div>
+                    <label for="">E-mail:</label>
+                    <input type="email">
+                </div>
+                <div>
+                    <label for="">Telefone:</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <label for="">CEP:</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <label for="">Rua:</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <label for="">Bairro:</label>
+                    <input type="text" name="" id="">
+                </div>
+            </form>
+            <div class="display-button">
+                <button class="save">Salvar</button>
+                <button class="delete">Excluir</button>
+            </div>
+        </fieldset>
+    </section>
+    <div class="line"></div>
+    <section>
+        <p class="title-fav">Sites Favoritos</p>
+        <div class="display-cards">
+            <div class="card">
+                <p class="text-card">GitHub</p>
+                <a class="a-card" href="https://github.com/">Acesse por este link</a>
+                <!-- <img class="img" src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt=""> -->
+                <!-- <div class="line-card"></div>    
+                <p class="text-card"></p>         -->
+            </div>
+            <div class="card">
+                <p class="text-card">Linkedln</p>
+                <a class="a-card" href="https://www.linkedin.com/">Acesse por este link</a>
+                <!-- <img class="img" src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt=""> -->
+                <!-- <div class="line-card"></div>    
+                <p class="text-card"></p>         -->
+            </div>
+            <div class="card">
+                <p class="text-card">Pinterest</p>
+                <a class="a-card" href="https://br.pinterest.com/">Acesse por este link</a>
+                <!-- <img class="img" src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt=""> -->
+                <!-- <div class="line-card"></div>    
+                <p class="text-card"></p>         -->
+            </div>
+            <div class="card">
+                <p class="text-card">Instagram</p>
+                <a class="a-card" href="https://www.instagram.com/">Acesse por este link</a>
+                <!-- <img class="img" src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt=""> -->
+                <!-- <div class="line-card"></div>    
+                <p class="text-card"></p>         -->
+            </div>
+            <div class="card">
+                <p class="text-card">Canva</p>
+                <a class="a-card" href="https://www.canva.com/pt_br/">Acesse por este link</a>
+                <!-- <img class="img" src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt=""> -->
+                <!-- <div class="line-card"></div>    
+                <p class="text-card"></p>         -->
+            </div>
+            <div class="card">
+                <p class="text-card">Dazz Camera</p>
+                <a class="a-card" href="https://apps.apple.com/br/app/dazz-cam-vintage-camera-3d/id1422471180">Acesse por este link</a>
+                <!-- <img class="img" src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" alt=""> -->
+                <!-- <div class="line-card"></div>    
+                <p class="text-card"></p>         -->
+            </div>
+        </div>
+    </section>
+    <div class="line"></div>
+    <section>
+        <p class="title-table">Carga Horária</p>
+        <!-- <table>
+            <caption>Matriz Horária - 4º Semestre</caption>
+            <thead>
+                <th></th>
+                <th>Agosto</th>
+                <th>Setembro</th>
+                <th>Outubro</th>
+                <th>Novembro</th>
+                <th>Dezembro</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Tstes1</th>
+                    <td>teste1</td>
+                    <td>teste1</td>
+                    <td>teste1</td>
+                    <td>teste1</td>
+                </tr>
+                <tr>
+                    <th>Tstes2</th>
+                    <td>Tstes2</td>
+                    <td>Tstes2</td>
+                    <td>Tstes2</td>
+                    <td>Tstes2</td>
+                </tr>
+                <tr>
+                    <th>Tstes3</th>
+                    <td>Tstes3</td>
+                    <td>Tstes3</td>
+                    <td>Tstes3</td>
+                    <td>Tstes3</td>
+                </tr>
+            </tbody>
+        </table> -->
+    </section>
+    <footer>
+        @2024 - Minha página html
+    </footer>
+</body>
+</html>
