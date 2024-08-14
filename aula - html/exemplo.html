@@ -32,36 +32,36 @@
     </section>
     <section>
         <fieldset>
-            <legend>Formulário</legend>
+            <legend>Formulário de Contato</legend>
             <form action="">
                 <div>
                     <label for="">Nome: </label>
-                    <input type="text" name="" id="name">
+                    <input type="text"  id="name">
                 </div>
                 <div>
                     <label for="">E-mail:</label>
-                    <input type="email">
+                    <input type="email" id="email">
                 </div>
                 <div>
                     <label for="">Telefone:</label>
-                    <input type="text" name="" id="">
+                    <input type="text" id="telefone" oninput="formatarTelefone(this)" maxlength="15">
                 </div>
                 <div>
                     <label for="">CEP:</label>
-                    <input type="text" name="" id="">
+                    <input type="text" id="CEP" oninput="formatarCEP(this)" maxlength="9">
                 </div>
                 <div>
                     <label for="">Rua:</label>
-                    <input type="text" name="" id="">
+                    <input type="text" id="rua" oninput="mascaraCep(this)">
                 </div>
                 <div>
                     <label for="">Bairro:</label>
-                    <input type="text" name="" id="">
+                    <input type="text" id="bairro" oninput="mascaraCep(this)">
                 </div>
             </form>
             <div class="display-button">
-                <button class="save">Salvar</button>
                 <button class="delete">Excluir</button>
+                <button class="save" type="submit">Salvar</button>
             </div>
         </fieldset>
     </section>
@@ -102,5 +102,6 @@
     <footer>
         @2024 - Minha página html
     </footer>
+    <script src="/aula - html/exemplo.js"></script>
 </body>
 </html>

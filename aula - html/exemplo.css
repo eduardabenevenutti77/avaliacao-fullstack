@@ -42,7 +42,8 @@ label {
 input {
     width: 100%;
     border-radius: 3px;
-    border: 1px solid;
+    border: 1px solid #ccc;
+    padding: 5px;
 }
 .sub-title {
     font-family: "Nunito";
@@ -87,14 +88,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 .save {
     border: 1px solid rgb(78, 185, 149);
     border-radius: 4px;
-    width: 100px;
+    width: 140px;
     font-weight: 500;
     font-family: "Nunito";
     background-color: rgb(241, 243, 243);
@@ -102,7 +103,7 @@ footer {
 .delete {
     border: 1px solid rgb(185, 80, 78);
     border-radius: 4px;
-    width: 100px;
+    width: 140px;
     font-weight: 500;
     font-family: "Nunito";
     background-color: rgb(241, 243, 243);
