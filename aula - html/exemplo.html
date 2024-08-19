@@ -23,85 +23,35 @@
      - lista ordenada com links para sites favoritos com cada link (ok)
      - aplicar estilização
     -->
-    <header>
+    <header id="header">
+        <p>aaaaaaaaaaaaaaaaaa</p>
         <p class="title">Minha página html - Básico</p>
     </header>
     <section class="display-section">
         <img src="/aula - html/imgs/img.jpg" alt="">
         <p class="text">Prazer, sou a Maria Edª Benevenutti! Aluna do <strong>4º Semestre de Análise e Desenvolvimento de Sistemas</strong> pela Faculdade Senac Joinville. Este é a minha mini atividade de desenvolvimento frontend, utilizando: <strong>HTML & CSS</strong>, para a matéria de FullStack - Ministrada pelo professor Renan Ponick.</p>
     </section>
-    <section>
-        <fieldset>
-            <legend>Formulário de Contato</legend>
-            <form action="">
-                <div>
-                    <label for="">Nome: </label>
-                    <input type="text"  id="name">
-                </div>
-                <div>
-                    <label for="">E-mail:</label>
-                    <input type="email" id="email">
-                </div>
-                <div>
-                    <label for="">Telefone:</label>
-                    <input type="text" id="telefone" oninput="formatarTelefone(this)" maxlength="15">
-                </div>
-                <div>
-                    <label for="">CEP:</label>
-                    <input type="text" id="CEP" oninput="formatarCEP(this)" maxlength="9">
-                </div>
-                <div>
-                    <label for="">Rua:</label>
-                    <input type="text" id="rua" oninput="mascaraCep(this)">
-                </div>
-                <div>
-                    <label for="">Bairro:</label>
-                    <input type="text" id="bairro" oninput="mascaraCep(this)">
-                </div>
-            </form>
-            <div class="display-button">
-                <button class="delete">Excluir</button>
-                <button class="save" type="submit">Salvar</button>
-            </div>
-        </fieldset>
-    </section>
-    <div class="line"></div>
-    <section>
-        <p class="title-fav">Sites Favoritos</p>
-        <div class="display-cards">
-            <div class="card">
-                <p class="text-card">GitHub</p>
-                <a class="a-card" href="https://github.com/">Acesse por este link</a>
-            </div>
-            <div class="card">
-                <p class="text-card">Linkedln</p>
-                <a class="a-card" href="https://www.linkedin.com/">Acesse por este link</a>
-            </div>
-            <div class="card">
-                <p class="text-card">Pinterest</p>
-                <a class="a-card" href="https://br.pinterest.com/">Acesse por este link</a>
-            </div>
-            <div class="card">
-                <p class="text-card">Instagram</p>
-                <a class="a-card" href="https://www.instagram.com/">Acesse por este link</a>
-            </div>
-            <div class="card">
-                <p class="text-card">Canva</p>
-                <a class="a-card" href="https://www.canva.com/pt_br/">Acesse por este link</a>
-            </div>
-            <div class="card">
-                <p class="text-card">Dazz Camera</p>
-                <a class="a-card" href="https://apps.apple.com/br/app/dazz-cam-vintage-camera-3d/id1422471180">Acesse por este link</a>
-            </div>
-        </div>
-    </section>
-    <div class="line"></div>
-    <section>
-        <p class="title-table">Carga Horária</p>
-    </section>
     <footer>
         @2024 - Minha página html
     </footer>
-    <script src="/aula - html/exemplo.js"></script>
+    <script>
+        const header = document.getElementById('header');
+        // header.style.color = 'green';
+        const h1 = document.createElement('h1');
+        h1.textContent = 'teste';
+        h1.style.color = 'red';
+        header.append(h1);
+        // header.append(h1);
+        header.addEventListener("click", () => {
+            alert("hello word!");
+        });
+        // header.addEventListener('mouseover', () => {
+        //     alert('hello word pt2');
+        // });
+        document.addEventListener('keydown', (e) => {
+            console.log(`foi clicado na tela: ${e.key}`)
+        });
+    </script>
+    <!-- <script src="/aula - html/exemplo.js"></script> -->
 </body>
 </html>
